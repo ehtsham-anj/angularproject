@@ -10,6 +10,9 @@
     padding: 0;
 
 }
+a[routerLink]{
+  color: white;
+}
 .logo{
   
   padding:  11px 22px; 
@@ -25,7 +28,7 @@
   display: flex;
   width: 100%;
   padding-right: 22px;
-  box-shadow:         inset 0 0 10px #000000;
+  
   
   
 }
@@ -34,6 +37,7 @@
   color: aliceblue;
   
 }
+/* this class will separate the logo and the nav bar*/
 .spacer{
   flex: 1 1 auto;
 }
@@ -79,15 +83,23 @@ body{
   background: #f2f2f2;
   font-family: 'Open Sans', sans-serif;
 }
-.cartspace{
-  margin-right: 15px;
+a{
+  text-decoration: none;
 }
+/* .cartspace{
+  margin-right: 10px;
+} */
 .search{
   font-size: 15px;
   
   margin-right: -17px;
   
   margin-left: 100px;
+}
+.searchinput{
+  width: 200px;
+  height: 34px;
+  border-radius: 4px;
 }
 .srchfont{
   font-size: 14px;
@@ -120,13 +132,7 @@ body{
   opacity: 30%;
   position: relative;
 }
-.searchimg{
-  width: 18px;
-  height: auto;
-  margin-bottom: 7px;
-  
- 
-}
+
 .btmheader{
   width: 100%;
   height: 40px;
@@ -146,6 +152,7 @@ body{
   
   text-shadow: 4px 4px brown;
 }
+
 .order{
   margin-top: 35px;
  

@@ -1,0 +1,99 @@
+.mainbanner{
+    background-color: wheat;
+    padding: 100px 20px;
+    height: 1000px;
+    
+}
+.contianer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px 300px 300px;
+    grid-gap: 25px;
+    float: left;
+    margin: 4px;
+    background-size: 100%; 
+   
+
+}
+.popup:hover{
+    
+   width: 550px;
+   height: 350px;
+}
+img {
+    background-size: 110%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.containerbody{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+  
+    font-weight: lighter;
+    background: wheat;
+    display: flex;
+    width: 550px;
+    color: black;
+  float: right;
+
+  
+    
+
+}
+
+.infot{
+    text-decoration: underline;
+    font-style: oblique;
+    font-size: 50px;
+    letter-spacing: 4px;
+    text-align: center;
+    background: wheat;
+    
+}
+.infop{
+font-style: oblique;
+font-size: 17px;
+text-align: center;
+background: wheat;
+
+}
+.chefspace{
+    padding-top: 300px;
+}
+.chefimage{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 600px;
+    margin-left: 900px;
+    
+  
+
+    background: wheat;
+    background-size: cover;
+    width: 300px;
+    height: auto;
+    color: black;
+    position: absolute;
+    left: 8%;
+    top: 100%;
+    
+    transform: translateY(-50%);  
+}
+
+mat-grid-tile {
+   margin-top: 100px;
+    background: wheat;
+  }
+  .reviewgrid {
+    margin-bottom: auto;
+    width: 500px;
+    height: auto;
+  }
+  mat-grid-tile {
+    font-size: 10pt;
+    font-style: italic;
+  }

@@ -1,7 +1,4 @@
-
-
-
-    <div [ngStyle]="{backgroundImage:'url(./assets/b1.jpg)'}" class="bgimg img-fluid" >
+   
         
         <div class="header">  
 
@@ -9,45 +6,49 @@
 
 <div class="spacer"></div>
 <div class="navbar">
-   <a ><button class="homebutton" mat-raised-button >Home
+   <a routerLink="/"><button class="button" mat-button >Home
      <mat-icon class="homeimg" aria-hidden="false" aria-label="Example home icon">home</mat-icon>
     </button></a> 
-   <a> <button class="button" mat-button [matMenuTriggerFor]="menu">MENU</button></a>
-   <mat-menu #menu="matMenu">
+   <a routerLink="menu"> <button class="button" mat-button ="menu">MENU</button></a>
+   <!-- <mat-menu #menu="matMenu">
   <a class="menuItem">  <button mat-menu-item>Breakfast</button></a>
     <a class="menuItem"><button mat-menu-item>Lunch</button></a>
     <a class="menuItem"><button mat-menu-item>Dinner</button></a>
-   </mat-menu>
-  <a><button class="button" mat-button [matMenuTriggerFor]="belowMenu">RESERVATION</button></a> 
+   </mat-menu> -->
+  <a routerLink="reserve"><button class="button" mat-button>RESERVATION</button></a> 
+
+   <a ><button class="button" mat-button [matMenuTriggerFor]="belowMenu">LOGIN</button></a> 
    <mat-menu #belowMenu="matMenu" yPosition="below">
    
-  <a class="menuItem">  <button mat-menu-item>Reserve Table</button></a>
-    <a class="menuItem"><button mat-menu-item>Instant Food</button></a>
+  <a routerLink="login"  class="menuItem">  <button mat-menu-item>Login</button></a>
+    <a routerLink="login/register" class="menuItem"><button mat-menu-item>Register</button></a>
+  
    </mat-menu>
-   <a ><button class="button" mat-button >LOGIN</button></a> 
    
-   <a ><button class="button" mat-button ><span class="cartspace">CART</span><img class="cartimg" [src]=cart> </button></a> 
-   <form class="search" action="/action_page.php" style="margin:auto;max-width:300px">
-    <input type="text" placeholder="Search.." name="search2">
-    <button mat-button ><a > <img class="searchimg" [src]=search></a></button>
-  </form>
+  
+   
+   <a ><button class="button" mat-button ><span class="cartspace">CART</span><mat-icon>shopping_cart</mat-icon></button></a> 
+   <input type="text" placeholder="Search..."  class="searchinput">
+   <button class="homebutton"  mat-button><mat-icon>search</mat-icon></button>
   
     
   
 </div>
         </div>
+        
         <!-- <div class="headerbtm"></div> -->
-        <div class="btmheader">
+        <!-- <div class="btmheader">
           
-        </div>
-        <div class="banner">
+        </div> -->
+        <!-- <div class="banner">
           <h1 class="bannerh1">Welcome To PickleMe <br><br> Restaurant</h1>
           <div class="order">
             <a><button class="orderbtn" mat-raised-button >ORDER NOW</button></a>
           </div>
-        </div>
+        </div> -->
 
         
 
         
-</div>
+
+
